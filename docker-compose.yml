@@ -2,7 +2,7 @@ version: "3"
 
 services:
   apache:
-    image: gillesmateu/soc-wp1
+    image: gmateu/soc-wp1
     depends_on:
      - database 
     volumes:

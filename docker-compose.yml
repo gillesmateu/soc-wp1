@@ -10,7 +10,7 @@ services:
     labels:
      - "traefik.backend=wordpress1"
      - "traefik.frontend.rule=Host:wp1.soc.imerir"
-     - "traefik.docker.network=traefik_default"
+     - "traefik.docker.network=soctraefik_default"
     networks:
      - proxy
      - default
@@ -31,4 +31,4 @@ networks:
        - subnet: 10.255.1.32/28
   proxy:
     external:
-      name: traefik_default
+      name: soctraefik_default
